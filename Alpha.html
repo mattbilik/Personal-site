@@ -1,0 +1,108 @@
+<html>
+<head>
+<style>
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+body {
+  /* Location of the image */
+  background-image: url(http://i.stack.imgur.com/jGlzr.png);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h3 { 
+   position: absolute; 
+   top: 80px; 
+   left: 100; 
+   width: 100%; 
+}
+h5 {
+position: absolute; 
+   top: 110px; 
+   left: 5; 
+   width: 100%;
+}
+
+</style>
+<title>Matthew Bilik</title>
+</head>
+<body>
+<center>
+<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front">
+			<img src="http://media.panjury.com/uploads/trial/yo_1402768806.png">
+			<h2 style="font-family:Courier New">Hey! You there! Scroll over me!</h2>
+		</div>
+		<div class="back">
+		<div class="image">
+		<h3>Welcome to Matthew Bilik's Portfolio</h3>
+		<h5>As you know, I like to code. Its one of my favorite hobbies. Its the creativity that gets me. The fact that you can make anything your heart desires. Yeah its that feeling that makes me go on. And yes im not just putting in random "Lorem Ipsum" im taking the time to write you, and this webpage a paragraph.</h5>
+		<img src="http://pcache.alexa.com/images/settings/windows7/notepad-blank.bb647ae001a4fc7d168c240e01088787.png">
+		
+		</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
