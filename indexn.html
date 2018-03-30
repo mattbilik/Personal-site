@@ -1,0 +1,235 @@
+<html lang="en">
+
+<head>
+
+  <title>mathat.net</title>
+
+  <style>
+    #color1 {
+      background-color: #CECECE;
+    }
+
+    p {
+      color: black;
+    }
+
+    #lft {
+      float: right;
+      margin-right: 5px;
+      font-size: 10px;
+    }
+
+    h1:hover {
+      color: #32127A;
+    }
+
+    #hati {
+      position: fixed;
+      z-index: 2;
+    }
+
+    #toph1 {
+      display: none;
+    }
+
+    @media screen and (max-width: 515px) {
+      #toph {
+        display: none;
+      }
+      #toph1 {
+        display: inline;
+      }
+    }
+
+    @media screen and (max-width: 770px) {
+      #hati {
+        display: none;
+      }
+    }
+
+    html::-webkit-scrollbar {
+      display: none; // Safari and Chrome
+    }
+
+    #imgcontainer {
+
+      height: auto;
+
+      width: 74.5%;
+      /* margin-left: 10%; */
+      /* margin-top:54vh; */
+      position: relative;
+      background-color: #FFB806;
+      border-radius: 12px;
+      overflow: hidden;
+      -webkit-transition-property: border-radius, margin-top, top;
+      -webkit-transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease;
+      -webkit-user-select: none;
+      -moz-transition-property: border-radius, margin-top, top;
+      -moz-transition-duration: 0.2s;
+      -moz-transition-timing-function: ease;
+      -moz-user-select: none;
+      -ms-transition-property: border-radius, margin-top, top;
+      -ms-transition-duration: 0.2s;
+      -ms-transition-timing-function: ease;
+      -ms-user-select: none;
+      -o-transition-property: border-radius, margin-top, top;
+      -o-transition-duration: 0.2s;
+      -o-transition-timing-function: ease;
+      -o-user-select: none;
+      transition-property: border-radius, margin-top, top;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+      user-select: none;
+      cursor: default;
+      box-shadow: 0 10px 200px rgba(0, 0, 0, 0.6);
+    }
+
+    h1 {
+      font-size: 4vw;
+    }
+
+    body {
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+    svg {
+      position: absolute;
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baffle.js/0.3.6/baffle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- or -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body id="color1" cz-shortcut-listen="true">
+
+  <nav style="background-color:orange">
+  </nav>
+  <div class="">
+    <a href="#"><img id="hati" src="hat.png" style="transform: rotate(0deg); transform-origin: 50% 50% 0px;"></a>
+
+  </div>
+
+  <center>
+    <div style="	margin-top:-5vh;" id="imgcontainer">
+      <p class="hide-on-small-only flow-text">a portfolio of portfolios in a portfolio</p>
+      <p>
+
+      </p>
+      <h1 id="toph" class="flow-text cool" style="font-family:'Merriweather';font-size: 5vw;">Matt's Stuff!</h1>
+      <h2 id="toph1" class="flow-text cool" style="font-family:'Merriweather';font-size: 8vw;">Matt's <br>Stuff!</h2>
+    </div>
+    <br>
+    <br>
+    <div id="imgcontainer">
+      <h1 class="hide-on-small-only" style="font-size: 4vw;">made in <br>2003</h1>
+      <h1 id="toph" class="hide-on-med-and-up" style="font-size: 4vw;">made in <br>2003</h1>
+
+      <h1 id="toph1" style="font-size: 8vw;">made <br>in <br>2003</h1>
+
+    </div>
+    <br>
+    <br>
+    <div id="imgcontainer">
+      <h1 class="hide-on-small-only" style="font-size: 4vw;">coding since <br> 2013</h1>
+
+
+      <h1 id="toph" class="hide-on-med-and-up" style="font-size: 4vw;">coding since <br> 2013</h1>
+
+      <h1 id="toph1" style="font-size: 8vw;">coding since <br> 2013</h1>
+      <a style="color:#32127A;position:relative;" target="_blank" href="resume.pdf"><h5>my resume!</h5></a>
+      <a style="color:#32127A;position:relative; " target="_blank" href="https://github.com/skrumb"><h5>my github!</h5></a>
+    </div>
+    <br>
+    <br>
+    <div id="imgcontainer">
+      <h1 class="hide-on-small-only" style="font-size: 4vw;">stuyhacks spring 2017</h1>
+      <h1 id="toph" class="hide-on-med-and-up" style="font-size: 4vw;">stuyhacks spring 2017</h1>
+
+      <h1 id="toph1" style="font-size: 8vw;">stuyhacks spring 2017</h1>
+
+      <p class="flow-text">"I'm the one in the green shirt!"</p>
+      <br class="hide-on-med-and-up">
+
+      <img class="pulse" src="matchuhacker_censored.jpg" width="500" height="350">
+      <br>
+      <a style="color:#32127A" target="_blank" href="https://devpost.com/software/el-autor"><h5>devpost</h5></a>
+      <a style="color:#32127A" target="_blank" href="https://github.com/skrumb"><h5>github</h5></a>
+
+    </div>
+    <br>
+    <p class="revealOnScroll" data-animation="fadeIn">hello</p>
+
+    <br>
+    <div id="imgcontainer">
+      <h1 class="hide-on-small-only" style="font-size: 4vw;">stuyhacks fall 2017</h1>
+      <h1 id="toph" class="hide-on-med-and-up" style="font-size: 4vw;">stuyhacks fall 2017</h1>
+
+      <h1 id="toph1" style="font-size: 8vw;">stuyhacks fall <br>2017</h1>
+
+      <p class="flow-text">I'm the one in the blue shirt!</p>
+      <br class="hide-on-med-and-up">
+
+      <img src="matchuhacker2.jpg" width="500" height="350">
+      <br>
+      <a style="color:#32127A" target="_blank" href="https://devpost.com/software/musicinator"><h5>devpost</h5></a>
+      <a style="color:#32127A" target="_blank" href="https://github.com/skrumb"><h5>github</h5></a>
+
+    </div>
+
+    <script>
+
+      var bLazy = new Blazy({});
+      let b = baffle('.cool').start();
+      b.reveal(1000);
+      $(window).scroll(function(event) {
+        var scroll = $(window).scrollTop();
+        $('#hati').rotate(scroll / 4);
+      });
+
+
+    </script>
+
+<script type="text/javascript">
+function revealOnScroll() {
+  var scrolled = $window.scrollTop();
+  $(".revealOnScroll:not(.animated)").each(function () {
+    var $this     = $(this),
+        offsetTop = $this.offset().top;
+
+    if (scrolled + win_height_padded > offsetTop) {
+      if ($this.data('timeout')) {
+        window.setTimeout(function(){
+          $this.addClass('animated ' + $this.data('animation'));
+        }, parseInt($this.data('timeout'),10));
+      } else {
+        $this.addClass('animated ' + $this.data('animation'));
+      }
+    }
+  });
+}
+</script>
+
+
+  </center>
+  <div class="hiddendiv common"></div>
+</body>
+
+</html>
